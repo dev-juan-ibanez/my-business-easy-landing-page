@@ -24,6 +24,10 @@ const translations = {
     feat_finance_desc: 'Acompanhe suas receitas, despesas e fluxo de caixa de forma integrada. Emissão de cobranças simplificada.',
     feat_pricing: 'Calculadora de Precificação',
     feat_pricing_desc: 'Simule seus custos, taxas de maquininhas e comissões. Descubra a margem de lucro real e nunca mais venda seus produtos no prejuízo.',
+    feat_branding: 'Personalização de Marca',
+    feat_branding_desc: 'Deixe o sistema com a sua cara. Adicione sua logo e as cores da sua marca para uma experiência única.',
+    feat_sellers: 'Gestão de Vendedores',
+    feat_sellers_desc: 'Cadastre vendedores com acessos exclusivos. Monitore o desempenho e analise as atividades de cada um da sua equipe.',
     showcase_title: 'Caso de Uso Real: Elas Store',
     showcase_desc: 'Veja nosso sistema em ação no dia a dia de uma loja de roupas femininas. Clique nas imagens para ampliar.',
     carousel_left: 'Rolar para esquerda',
@@ -79,6 +83,10 @@ const translations = {
     feat_finance_desc: 'Track your income, expenses, and cash flow in an integrated way. Simplified billing issuance.',
     feat_pricing: 'Pricing Calculator',
     feat_pricing_desc: 'Simulate your costs, machine fees, and commissions. Discover the real profit margin and never sell at a loss again.',
+    feat_branding: 'Brand Customization',
+    feat_branding_desc: 'Make the system yours. Add your logo and brand colors for a unique experience.',
+    feat_sellers: 'Seller Management',
+    feat_sellers_desc: 'Register sellers with exclusive access. Monitor performance and analyze the activities of each team member.',
     showcase_title: 'Real Use Case: Elas Store',
     showcase_desc: 'See our system in action in the daily life of a women\'s clothing store. Click on images to enlarge.',
     carousel_left: 'Scroll left',
@@ -134,6 +142,10 @@ const translations = {
     feat_finance_desc: 'Siga sus ingresos, gastos y fluxo de caja de forma integrada. Emisión de cobros simplificada.',
     feat_pricing: 'Calculadora de Precios',
     feat_pricing_desc: 'Simule sus costos, tasas de máquinas y comisiones. Descubra el margen de beneficio real y no vuelva a vender con pérdidas.',
+    feat_branding: 'Personalización de Marca',
+    feat_branding_desc: 'Haga el sistema suyo. Añada su logo y los colores de su marca para una experiencia única.',
+    feat_sellers: 'Gestión de Vendedores',
+    feat_sellers_desc: 'Registre vendedores con accesos exclusivos. Monitoree el desempeño y analice las actividades de cada miembro de su equipo.',
     showcase_title: 'Caso de Uso Real: Elas Store',
     showcase_desc: 'Vea nuestro sistema en acción no día a día de una tienda de ropa femenina. Haga clic nas imágenes para ampliar.',
     carousel_left: 'Desplazar a la izquierda',
@@ -332,6 +344,29 @@ function App() {
               </div>
               <h3>{t('feat_pricing')}</h3>
               <p>{t('feat_pricing_desc')}</p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 19V21M7 21H17M21 15V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V15M3 15L12 3L21 15H3Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+              <h3>{t('feat_branding')}</h3>
+              <p>{t('feat_branding_desc')}</p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M23 21V19C22.9993 18.1137 22.7044 17.2524 22.1614 16.5523C21.6184 15.8522 20.8581 15.3516 20 15.13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45768C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+              <h3>{t('feat_sellers')}</h3>
+              <p>{t('feat_sellers_desc')}</p>
             </div>
           </div>
         </div>
