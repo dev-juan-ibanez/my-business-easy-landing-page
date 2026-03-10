@@ -59,9 +59,10 @@ const translations = {
     trial_alert: '⚠️ Migra para Pro em 15 dias',
     btn_select: 'Selecionar',
     btn_save: 'Economizar',
-    coming_soon_title: 'Em breve nas lojas de aplicativos',
-    coming_soon_desc: 'Prepare-se para levar seu negócio no bolso. O MyBusinessEasy para iOS e Android está chegando.',
-    coming_soon_badges: 'Disponível em breve',
+    btn_download_beta: 'Baixar APK Beta',
+    coming_soon_title: 'Experimente o App em Beta',
+    coming_soon_desc: 'O MyBusinessEasy para Android já está disponível em versão Beta! Baixe agora e comece a gerenciar seu negócio de qualquer lugar. Em breve na App Store.',
+    coming_soon_badges: 'Versão Beta disponível',
     footer_rights: 'Todos os direitos reservados.',
   },
   en: {
@@ -118,9 +119,10 @@ const translations = {
     trial_alert: '⚠️ Migrates to Pro in 15 days',
     btn_select: 'Select',
     btn_save: 'Save',
-    coming_soon_title: 'Coming soon to app stores',
-    coming_soon_desc: 'Get ready to take your business in your pocket. MyBusinessEasy for iOS and Android is coming.',
-    coming_soon_badges: 'Available soon',
+    btn_download_beta: 'Download Beta APK',
+    coming_soon_title: 'Try the App in Beta',
+    coming_soon_desc: 'MyBusinessEasy for Android is now available in Beta! Download now and start managing your business from anywhere. Coming soon to the App Store.',
+    coming_soon_badges: 'Beta version available',
     footer_rights: 'All rights reserved.',
   },
   es: {
@@ -177,9 +179,10 @@ const translations = {
     trial_alert: '⚠️ Migra a Pro en 15 dias',
     btn_select: 'Seleccionar',
     btn_save: 'Ahorrar',
-    coming_soon_title: 'Próximamente en las tiendas de aplicaciones',
-    coming_soon_desc: 'Prepárese para llevar su negocio en el bolsillo. MyBusinessEasy para iOS y Android está llegando.',
-    coming_soon_badges: 'Disponible pronto',
+    btn_download_beta: 'Descargar APK Beta',
+    coming_soon_title: 'Prueba la App en Beta',
+    coming_soon_desc: '¡MyBusinessEasy para Android ya está disponible en versión Beta! Descárgalo ahora y comienza a gestionar tu negocio desde cualquier lugar. Próximamente en la App Store.',
+    coming_soon_badges: 'Versión Beta disponible',
     footer_rights: 'Todos los derechos reservados.',
   }
 }
@@ -504,18 +507,18 @@ function App() {
             <h2>{t('coming_soon_title')}</h2>
             <p>{t('coming_soon_desc')}</p>
             <div className="app-badges">
-              <div className="badge-placeholder">
+              <div className="badge-placeholder disabled">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.1 2.48-1.34.03-1.77-.79-3.29-.79-1.53 0-1.99.77-3.27.82-1.34.05-2.34-1.28-3.14-2.43-1.66-2.37-2.92-6.68-1.21-9.62 1.05-1.8 2.89-2.94 4.88-2.97 1.3-.02 2.53.88 3.33.88.79 0 2.31-1.1 3.86-1.02.65.02 2.48.26 3.65 1.95-.12.07-2.18 1.25-2.15 3.83.03 3.1 2.72 4.19 2.76 4.21-.04.1-1.44 5.07-2.32 6.46zM15.5 1.5c.78.94 1.2 2.22 1 3.5-1.12.05-2.48-.67-3.27-1.6-.8-.94-1.22-2.22-1-3.48 1.15-.09 2.51.65 3.27 1.58z" />
                 </svg>
-                iOS App
+                iOS (Coming soon)
               </div>
-              <div className="badge-placeholder">
+              <a href={`${import.meta.env.BASE_URL}app-my-business-beta.apk`} download className="badge-placeholder active">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M17.523 15.3414L18.3242 16.7291C18.423 16.9002 18.3644 17.1189 18.1934 17.2177L15.7163 18.6481C15.5453 18.7469 15.3266 18.6883 15.2278 18.5173L14.4143 17.1084C13.6611 17.47 12.8394 17.6834 12 17.7342V19.4996C12 19.7205 11.8209 19.8996 11.6 19.8996H10.4C10.1791 19.8996 10 19.7205 10 19.4996V17.7342C9.16057 17.6834 8.33894 17.47 7.58574 17.1084L6.77218 18.5174C6.67341 18.6884 6.45474 18.7469 6.28373 18.6481L3.80665 17.2178C3.63564 17.119 3.57703 16.9003 3.6758 16.7293L4.47702 15.3414C3.54133 14.156 3 12.6418 3 11H19C19 12.6418 18.4587 14.156 17.523 15.3414ZM7 8.5C7 8.22386 6.77614 8 6.5 8C6.22386 8 6 8.22386 6 8.5C6 8.77614 6.22386 9 6.5 9C6.77614 9 7 8.77614 7 8.5ZM16.5 9C16.7761 9 17 8.77614 17 8.5C17 8.22386 16.7761 8 16.5 8C16.2239 8 16 8.22386 16 8.5C16 8.77614 16.2239 9 16.5 9Z" />
                 </svg>
-                Android App
-              </div>
+                {t('btn_download_beta')}
+              </a>
             </div>
           </div>
         </div>
